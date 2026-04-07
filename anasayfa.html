@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EBA Sistem | Tarım ve Yazılım Çözümleri</title>
+  <style>
+    /* Tüm sayfa ayarları */
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      overflow: hidden; /* Sayfanın kaymasını engeller, tam ekran kalır */
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    /* ARKA PLAN RESMİ AYARLARI (1.png) */
+    .bg-image {
+      /* Klasördeki 1.png dosyasını kullanır */
+      background-image: url('1.png');
+      
+      /* Resmi tam ekrana yayar ve ortalar */
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      
+      /* Burası kritik: Resmin üzerine ince siyah bir film çeker ki yazılar okunsun */
+      background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6)), url('1.png');
+      
+      height: 100%;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    /* YAZI KONTEYNERI (Beyaz arka plan kaldırıldı, şeffaf yapıldı) */
+    .container {
+      text-align: center;
+      color: #ffffff; /* Tüm yazıları beyaz yapar (karanlık film üzerinde net okunsun diye) */
+      max-width: 700px;
+      width: 90%;
+      padding: 20px;
+      /* Hafif bir metin gölgesi ekleyerek okunabilirliği maksimuma çıkarıyoruz */
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.6); 
+    }
+
+    h1 {
+      /* Ana başlık rengini beyaz yapıyoruz */
+      color: #ffffff; 
+      font-size: 42px;
+      margin-bottom: 20px;
+      margin-top: 0;
+      font-weight: 800;
+      letter-spacing: 1px;
+    }
+
+    p.subtitle {
+      font-size: 20px;
+      line-height: 1.6;
+      /* Alt başlık rengini hafif gri/beyaz yapıyoruz */
+      color: #f0f0f0; 
+      margin-bottom: 40px;
+      font-weight: 400;
+    }
+
+    /* İLETİŞİM KUTUSU (Şeffaf yeşilimsi bir ton verdik) */
+    .contact-box {
+      background: rgba(255, 255, 255, 0.1); /* Çok hafif şeffaf beyazlık */
+      padding: 25px;
+      border-radius: 12px;
+      font-size: 18px;
+      color: #ffffff;
+      border: 1px solid rgba(255, 255, 255, 0.2); /* İnce şeffaf çerçeve */
+    }
+
+    /* MAİL LİNKİ AYARLARI */
+    .email-link {
+      display: inline-block;
+      margin-top: 12px;
+      font-size: 24px;
+      font-weight: bold;
+      /* Link rengini dikkat çekici açık yeşil yapıyoruz */
+      color: #81c784; 
+      text-decoration: none;
+      transition: all 0.3s ease;
+      text-shadow: none; /* Linkte gölgeyi kaldırıp netleştiriyoruz */
+    }
+
+    .email-link:hover {
+      color: #ffffff; /* Üzerine gelince beyaza döner */
+      transform: scale(1.05); /* Hafifçe büyür */
+    }
+  </style>
+</head>
+<body>
+
+  <div class="bg-image">
+    
+    <div class="container">
+      <h1>EBA SİSTEM'e Hoş Geldiniz</h1>
+      <p class="subtitle">
+        Tarım hizmetleri ve sektöre özel programsal çözümlerle yanınızdayız. Dijital tarım altyapıları, operasyonel takip sistemleri ve modern tarım teknolojileri sunuyoruz.
+      </p>
+      
+      <div class="contact-box">
+        Detaylı bilgi ve proje çözümleri için bize ulaşın:<br>
+        <a href="mailto:ebasistemtr@gmail.com" class="email-link">ebasistemtr@gmail.com</a>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>
